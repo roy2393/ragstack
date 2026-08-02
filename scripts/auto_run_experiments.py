@@ -180,50 +180,34 @@ def main():
         experiments = [
             ("mock", "en", 0.4),
             ("mock", "en_int", 0.2),
-            ("mock", "en_fact", 1.0)
+            ("mock", "en_fact", 0.0)
         ]
     else:
-        # Complete list of 26 runs back to back (excluding the ongoing qwen2.5:7b, en, noise=0.4 run)
+        # Complete list of remaining runs back to back
         experiments = [
-            # 1. Llama 3 (8B) Noise Robustness sweep
-            ("llama3:8b", "en", 0.0),
-            ("llama3:8b", "en", 0.2),
-            ("llama3:8b", "en", 0.6),
-            ("llama3:8b", "en", 0.8),
-            
-            # 2. Qwen 2.5 (7B) Noise Robustness & Rejection sweep
-            ("qwen2.5:7b", "en", 0.0),
-            ("qwen2.5:7b", "en", 0.2),
-            ("qwen2.5:7b", "en", 0.6),
-            ("qwen2.5:7b", "en", 0.8),
-            ("qwen2.5:7b", "en", 1.0),
-            
-            # 3. Qwen 2.5 (14B) Noise Robustness & Rejection sweep
-            ("qwen2.5:14b", "en", 0.0),
-            ("qwen2.5:14b", "en", 0.2),
-            ("qwen2.5:14b", "en", 0.4),
-            ("qwen2.5:14b", "en", 0.6),
+            # 1. Counterfactual sweeps (noise_rate=0.0)
+            ("llama3:8b", "en_fact", 0.0),
+            ("qwen2.5:7b", "en_fact", 0.0),
+            ("qwen2.5:14b", "en_fact", 0.0),
+
+            # 2. Qwen 2.5 (14B) Noise Robustness & Rejection sweep (Remaining)
             ("qwen2.5:14b", "en", 0.8),
             ("qwen2.5:14b", "en", 1.0),
             
-            # 4. Llama 3 (8B) Information Integration sweep
+            # 3. Llama 3 (8B) Information Integration sweep
             ("llama3:8b", "en_int", 0.0),
             ("llama3:8b", "en_int", 0.2),
             ("llama3:8b", "en_int", 0.4),
             
-            # 5. Qwen 2.5 (7B) Information Integration sweep
+            # 4. Qwen 2.5 (7B) Information Integration sweep
             ("qwen2.5:7b", "en_int", 0.0),
             ("qwen2.5:7b", "en_int", 0.2),
             ("qwen2.5:7b", "en_int", 0.4),
             
-            # 6. Qwen 2.5 (14B) Information Integration sweep
+            # 5. Qwen 2.5 (14B) Information Integration sweep
             ("qwen2.5:14b", "en_int", 0.0),
             ("qwen2.5:14b", "en_int", 0.2),
-            ("qwen2.5:14b", "en_int", 0.4),
-            
-            # 7. Qwen 2.5 (7B & 14B) Counterfactual sweep (noise_rate=1.0)
-            ("qwen2.5:7b", "en_fact", 1.0),
-            ("qwen2.5:14b", "en_fact", 1.0)
+            ("qwen2.5:14b", "en_int", 0.4)
         ]
     
     total_runs = len(experiments)

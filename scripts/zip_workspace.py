@@ -4,7 +4,7 @@ from pathlib import Path
 
 def zip_workspace(output_filename="ragstack_colab.zip"):
     workspace_dir = Path(__file__).parent.parent.resolve()
-    output_path = workspace_dir / "scripts" / output_filename
+    output_path = workspace_dir / output_filename
 
     # Files/directories to exclude
     exclude_dirs = {".git", ".venv", "__pycache__", "chroma_db"}
@@ -21,12 +21,12 @@ def zip_workspace(output_filename="ragstack_colab.zip"):
             if any(p in exclude_dirs for p in relative_parts):
                 continue
                 
-            # If under data/raw, exclude all subfolders except covidqa
+            # If under data/raw, exclude all subfolders except covidqa and cuad
             if "data" in relative_parts and "raw" in relative_parts:
                 raw_idx = relative_parts.index("raw")
                 if len(relative_parts) > raw_idx + 1:
                     dataset_subfolder = relative_parts[raw_idx + 1]
-                    if dataset_subfolder != "covidqa":
+                    if dataset_subfolder not in ("covidqa", "cuad"):
                         continue
             
             # Exclude eval run csv files

@@ -106,6 +106,18 @@ Use the `--sweep` flag to iterate over cross-combinations of chunking strategies
 python main.py --profile local-real --dataset covidqa --sweep
 ```
 
+### ⚖️ Legal RAG Diagnostics & Evaluation (CUAD)
+To run advanced legal-domain diagnostics on the **CUAD (Contract Understanding Atticus Dataset)** dataset:
+1. Run an evaluation sweep/single run on `cuad`:
+   ```bash
+   python main.py --profile local-mock --dataset cuad -n 5 --run_id_prefix cuad_test_run
+   ```
+2. Execute the diagnostics compiler on the generated run file:
+   ```bash
+   python scripts/cuad_rich_analysis.py --run_id cuad_test_run_recursive_mock_hybrid
+   ```
+   This generates a detailed 3-level diagnostic report at **`reports/cuad_diagnostic_report.md`**, analyzing sentence-level chunk boundary cuts, clause category counts, and LLM failure dashboard categories.
+
 ### Running on Google Colab (GPU)
 For heavy models (e.g. `bge-large` embedders and `flan-t5` generators):
 1. Use the pre-built notebook: [run_pipeline_colab.ipynb](./notebooks/run_pipeline_colab.ipynb).
