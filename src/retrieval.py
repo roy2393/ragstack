@@ -131,20 +131,58 @@ def initialize_chroma_collection(config: ExperimentConfig, chunks: List[Document
     return collection
 
 
+class CrossEncoderReranker:
+    def __init__(self, base_retriever, model_name: str, top_k: int, is_mock: bool = False):
+        self.base_retriever = base_retriever
+        self.top_k = top_k
+        self.is_mock = is_mock
+        if not is_mock:
+            from sentence_transformers import CrossEncoder
+            self.model = CrossEncoder(model_name)
+        else:
+            self.model = None
+
+    def retrieve(self, query: str) -> List[Document]:
+        docs = self.base_retriever.retrieve(query)
+        if not docs:
+            return []
+        if self.is_mock:
+            return docs[:self.top_k]
+            
+        pairs = [[query, doc.page_content] for doc in docs]
+        scores = self.model.predict(pairs)
+        
+        ranked = sorted(zip(docs, scores), key=lambda x: x[1], reverse=True)
+        return [doc for doc, score in ranked[:self.top_k]]
+
+
 def get_retriever(config: ExperimentConfig, chunks: List[Document], embedder: Any):
     """
     Returns the configured retriever (dense, sparse, hybrid) pre-populated with chunks.
+    Optionally wraps it with a Cross-Encoder Reranker if configured.
     """
+    if config.reranker != "none":
+        retrieve_k = max(config.top_k * 3, 15)
+    else:
+        retrieve_k = config.top_k
+
     # Initialize Dense Index
     collection = initialize_chroma_collection(config, chunks, embedder)
-    dense = DenseRetriever(collection, embedder, config.top_k)
+    dense = DenseRetriever(collection, embedder, retrieve_k)
     
     if config.retriever == "dense":
-        return dense
+        base_retriever = dense
     elif config.retriever == "sparse":
-        return SparseRetriever(chunks, config.top_k)
+        base_retriever = SparseRetriever(chunks, retrieve_k)
     elif config.retriever == "hybrid":
-        sparse = SparseRetriever(chunks, config.top_k)
-        return HybridRetriever(dense, sparse, config.top_k)
+        sparse = SparseRetriever(chunks, retrieve_k)
+        base_retriever = HybridRetriever(dense, sparse, retrieve_k)
     else:
         raise ValueError(f"Unknown retriever: {config.retriever}")
+
+    if config.reranker == "cross-encoder":
+        is_mock_reranker = (config.profile == "local-mock")
+        model_name = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+        return CrossEncoderReranker(base_retriever, model_name, config.top_k, is_mock=is_mock_reranker)
+        
+    return base_retriever

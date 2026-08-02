@@ -116,7 +116,13 @@ To run advanced legal-domain diagnostics on the **CUAD (Contract Understanding A
    ```bash
    python scripts/cuad_rich_analysis.py --run_id cuad_test_run_recursive_mock_hybrid
    ```
-   This generates a detailed 3-level diagnostic report at **`reports/cuad_diagnostic_report.md`**, analyzing sentence-level chunk boundary cuts, clause category counts, and LLM failure dashboard categories.
+
+### 🤖 Automated Self-Tuning Optimizer
+To sequentially tune RAG parameters (embedder, retriever, chunker, chunk size) to maximize a specific metric (e.g. `mean_adherence` or `mean_context_relevance`):
+```bash
+python scripts/auto_tune_rag.py --dataset cuad --n_records 5 --profile local-mock --metric mean_adherence
+```
+This runs a greedy coordinate-descent tuning sequence (locking in winners step-by-step) and saves an execution summary report at **`reports/cuad_auto_tune_report.md`**.
 
 ### Running on Google Colab (GPU)
 For heavy models (e.g. `bge-large` embedders and `flan-t5` generators):

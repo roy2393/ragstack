@@ -62,6 +62,7 @@ class ExperimentConfig:
 
     # Retrieval params
     retriever: Literal["dense", "sparse", "hybrid"] = "hybrid"
+    reranker:  Literal["none", "cross-encoder"] = "none"
     top_k:     int = 5
 
     # Unique prefix for run session / sweep grouping

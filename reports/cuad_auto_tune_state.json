@@ -1,0 +1,40 @@
+{
+  "locked_embedder": "mock",
+  "locked_retriever": "dense",
+  "locked_chunker": "recursive",
+  "locked_chunk_size": 256,
+  "locked_reranker": "none",
+  "current_stage": 6,
+  "stage_runs_completed": {},
+  "tuning_history": [
+    {
+      "stage": "2. Retriever Tuning",
+      "tested_options": "{'dense': 0.5, 'sparse': 0.5}",
+      "selected": "dense",
+      "tune_score": 0.5,
+      "full_score": 0.5
+    },
+    {
+      "stage": "3. Chunker Tuning",
+      "tested_options": "{'recursive': 0.5, 'metadata': 0.5}",
+      "selected": "recursive",
+      "tune_score": 0.5,
+      "full_score": 0.5
+    },
+    {
+      "stage": "4. Chunk Size Tuning",
+      "tested_options": "{256: 0.5, 512: 0.5}",
+      "selected": 256,
+      "tune_score": 0.5,
+      "full_score": 0.5
+    },
+    {
+      "stage": "5. Reranker Tuning",
+      "tested_options": "{'none': 0.5, 'cross-encoder': 0.5}",
+      "selected": "none",
+      "tune_score": 0.5,
+      "full_score": 0.5
+    }
+  ],
+  "is_completed": true
+}

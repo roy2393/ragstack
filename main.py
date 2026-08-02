@@ -107,6 +107,12 @@ def main():
         default=5,
         help="Number of retrieved documents to inject in prompt (default: 5)"
     )
+    parser.add_argument(
+        "--reranker",
+        choices=["none", "cross-encoder"],
+        default="none",
+        help="Reranker model architecture (default: none)"
+    )
     
     # Sweep execution mode
     parser.add_argument(
@@ -165,6 +171,7 @@ def main():
                         chunk_size=args.chunk_size,
                         chunk_overlap=args.chunk_overlap,
                         retriever=retriever,
+                        reranker=args.reranker,
                         top_k=args.top_k,
                         run_id_prefix=run_id_prefix
                     )
@@ -191,6 +198,7 @@ def main():
             chunk_size=args.chunk_size,
             chunk_overlap=args.chunk_overlap,
             retriever=args.retriever,
+            reranker=args.reranker,
             top_k=args.top_k,
             run_id_prefix=run_id_prefix
         )
