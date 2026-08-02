@@ -138,8 +138,8 @@ class LLMEvaluator:
             if score_val is not None:
                 return score_val
             else:
-                print(f"Warning: Judge response was unparseable. Response was:\n{judge_response}")
-                return 0.6  # Default fallback (3/5)
+                print(f"Warning: Judge response was unparseable. Response was:\n{judge_response}. Falling back to heuristic.")
+                return -1.0  # Fall back to heuristic evaluator
         except Exception as e:
             print(f"Warning: Judge LLM call failed: {e}. Falling back to heuristic.")
             self.last_details[name] = {

@@ -57,6 +57,12 @@ def parse_args():
         action="store_true",
         help="Disable resume capability and force start a fresh tuning run"
     )
+    parser.add_argument(
+        "--generator",
+        type=str,
+        default=None,
+        help="Override profile default generator and evaluator model (e.g. llama3:8b)"
+    )
     return parser.parse_args()
 
 def fetch_score_from_master(run_id: str, metric: str, base_dir: Path) -> float:
@@ -106,7 +112,7 @@ def main():
         chunkers = ["recursive", "metadata"]
         chunk_sizes = [256, 512]
         rerankers = ["none", "cross-encoder"]
-        generator_model = "mock"
+        generator_model = args.generator if args.generator else "mock"
         evaluator_model = "mock"
     elif args.profile == "local-real":
         embedders = ["minilm"]
@@ -114,7 +120,7 @@ def main():
         chunkers = ["recursive", "semantic"]
         chunk_sizes = [256, 512]
         rerankers = ["none", "cross-encoder"]
-        generator_model = "mock"
+        generator_model = args.generator if args.generator else "mock"
         evaluator_model = "heuristic"
     else:  # colab-gpu
         embedders = ["bge-small", "bge-large", "minilm"]
@@ -122,7 +128,7 @@ def main():
         chunkers = ["recursive", "semantic"]
         chunk_sizes = [256, 512, 1024]
         rerankers = ["none", "cross-encoder"]
-        generator_model = "hf-small"
+        generator_model = args.generator if args.generator else "hf-small"
         evaluator_model = "llm"
 
     # Initial Baseline / Default parameters
