@@ -1,0 +1,248 @@
+=== Comparison: ChunkSize_256 vs ChunkSize_1024 ===
+Found 100 matching questions.
+
+Comparative Case 1:
+  Question: Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor? 
+
+  [ChunkSize_256 Config]:
+    Answer: Based on the provided context, it appears that there is no explicit mention of a license grant by affiliates of the licensor. The language used in the agreement suggests that the Developer (likely an affiliate of the licensor) grants a license to the Client for certain intellectual property rights, but there is no indication that these rights are owned or controlled by affiliates of the licensor.
+
+The relevant clauses mention:
+
+* "the other Party" (referring to the Client)
+* "any Intellectual Property nor has either party made any transfer or assignment to the"
+* "all software, improvements, code and other work produced... during the course of this agreement"
+
+These phrases suggest that the intellectual property rights being granted are those owned by the Developer (likely an affiliate of the licensor), rather than affiliates of the licensor themselves.
+
+Therefore, based on the provided context, it appears that there is no license grant by affiliates of the licensor.
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, as it accurately identifies the language used in the agreement and correctly concludes that there is no mention of a license grant by affiliates of the licensor.
+
+  [ChunkSize_1024 Config]:
+    Answer: Yes, the contract contains a license grant by affiliates of the Licensor.
+
+According to Section 5.1, NCM (the Licensor) grants Network Affiliate a non-exclusive, non-transferable, non-sublicenseable, royalty-free limited license to the object code version of the Software on Equipment at Theatres solely for the limited purpose of performing this Agreement.
+
+Additionally, in Section 12.2, it is stated that NCM hereby grants to Network Affiliate during the Term a non-exclusive, non-transferable, non-sublicenseable license to any Derived Works solely for use in connection with the Service as expressly provided by this Agreement.
+
+Furthermore, in Section 18(b), it is mentioned that Licensee (Network Affiliate) may assign its rights and obligations to this Agreement to any of its Affiliates or subsidiaries with the prior written consent of the Licensor.
+    Relevance Score: 0.8
+    Adherence Score: 0.2
+    Judge Adherence Feedback: Score: 14
+
+Reasoning: The answer is fully supported by the context, specifically referencing Section 5.1 and Section 12.2 of the contract, which clearly state the license grants by NCM (the Licensor) to Network Affiliate. Additionally, Section 18(b) supports the statement that Licensee may assign its rights and obligations to this Agreement to any of its Affiliates or subsidiaries with the prior written consent of the Licensor.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 2:
+  Question: Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor? 
+
+  [ChunkSize_256 Config]:
+    Answer: Based on the provided context, it appears that there is no explicit mention of a license grant by affiliates of the licensor. The language used in the agreement suggests that the Developer (likely an affiliate of the licensor) grants a license to the Client for certain intellectual property rights, but there is no indication that these rights are owned or controlled by affiliates of the licensor.
+
+The relevant clauses mention:
+
+* "the other Party" (referring to the Client)
+* "any Intellectual Property nor has either party made any transfer or assignment to the"
+* "all software, improvements, code and other work produced... during the course of this agreement"
+
+These phrases suggest that the intellectual property rights being granted are those owned by the Developer (likely an affiliate of the licensor), rather than affiliates of the licensor themselves.
+
+Therefore, based on the provided context, it appears that there is no license grant by affiliates of the licensor.
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, as it accurately identifies the language used in the agreement and correctly concludes that there is no mention of a license grant by affiliates of the licensor.
+
+  [ChunkSize_1024 Config]:
+    Answer: Yes, the contract contains a license grant by affiliates of the Licensor.
+
+According to Section 5.1, NCM (the Licensor) grants Network Affiliate a non-exclusive, non-transferable, non-sublicenseable, royalty-free limited license to the object code version of the Software on Equipment at Theatres solely for the limited purpose of performing this Agreement.
+
+Additionally, in Section 12.2, it is stated that NCM hereby grants to Network Affiliate during the Term a non-exclusive, non-transferable, non-sublicenseable license to any Derived Works solely for use in connection with the Service as expressly provided by this Agreement.
+
+Furthermore, in Section 18(b), it is mentioned that Licensee (Network Affiliate) may assign its rights and obligations to this Agreement to any of its Affiliates or subsidiaries with the prior written consent of the Licensor.
+    Relevance Score: 0.8
+    Adherence Score: 0.2
+    Judge Adherence Feedback: Score: 14
+
+Reasoning: The answer is fully supported by the context, specifically referencing Section 5.1 and Section 12.2 of the contract, which clearly state the license grants by NCM (the Licensor) to Network Affiliate. Additionally, Section 18(b) supports the statement that Licensee may assign its rights and obligations to this Agreement to any of its Affiliates or subsidiaries with the prior written consent of the Licensor.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 3:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+
+  [ChunkSize_256 Config]:
+    Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+
+  [ChunkSize_1024 Config]:
+    Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The closest provision is Section 4.7 (Mutual Obligations), which describes certain rights related to software source code, object code, and documentation, as well as trademarks and service marks, but it does not involve a right of first refusal or offer.
+    Relevance Score: 0.4
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. There is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services in the provided agreement.
+
+--------------------------------------------------------------------------------
+
+=== Comparison: Retriever_Dense vs Retriever_Sparse ===
+Found 100 matching questions.
+
+Comparative Case 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+
+  [Retriever_Dense Config]:
+    Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that fees are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on this topic, it's possible that the relevant details may be found in other sections or exhibits of the agreement, or in separate documents or contracts.
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+  [Retriever_Sparse Config]:
+    Answer: According to Section 17.5.3, if an employer increases the proportion of working time spent on Maintenance Services by any Employee without prior consent from DCL (which shall not be withheld unless granting consent would result in a conflict), there is no fee increase or consent requirement mentioned in this specific context.
+
+However, it appears that there might be a threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period. According to Section 17.5(b), if Customer's Minimum Order Quantity for a Product exceeds its ratable allocation of manufacturing capacity or Product Materials (as applicable) for the quarter, then the suspension period may not apply.
+
+In summary, there is no fee increase or consent requirement mentioned in this context, but there might be a threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period.
+    Relevance Score: 0.8
+    Adherence Score: 0.8
+    Judge Adherence Feedback: Score: 4
+Reasoning: The answer is fully supported by the context, accurately identifying the absence of fee increase or consent requirement mentioned in Section 17.5.3 and correctly pointing out the potential threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period. However, it could be slightly improved by providing more specific details about the suspension period's application.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 2:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+
+  [Retriever_Dense Config]:
+    Answer: Based on the context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, extended for as long as the Software is covered by Maintenance Services and used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+    Relevance Score: 1.0
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+
+  [Retriever_Sparse Config]:
+    Answer: Based on the provided text, there is no specific duration mentioned for a warranty against defects or errors in technology, products, or services. However, it can be inferred that:
+
+* For retail Products, an end-user limited warranty is provided with a duration of one year (as stated in Section 10.1).
+* For OEM products, a one-year limited warranty is also provided.
+* There is no mention of a specific warranty period for the Integra Technology or PcoMed Surface Modification Technology.
+
+It's possible that there may be additional warranties or guarantees mentioned elsewhere in the contract, but based on this text alone, it appears that the duration of any warranty against defects or errors is not explicitly stated.
+    Relevance Score: 0.8
+    Adherence Score: 0.8
+    Judge Adherence Feedback: Score: 4
+Reasoning: The answer accurately identifies the lack of specific duration mentioned for a warranty against defects or errors, and correctly infers that there may be additional warranties or guarantees mentioned elsewhere in the contract. However, it could be improved by explicitly stating that the provided text does not provide sufficient information to determine the duration of the warranty.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 3:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+
+  [Retriever_Dense Config]:
+    Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+
+  [Retriever_Sparse Config]:
+    Answer: Yes, there are several clauses that grant one party a right of first refusal, right of first offer, or right of first negotiation:
+
+1. Right of First Refusal: SpinCo shall provide RemainCo with a right of first refusal to collaborate with SpinCo to provide content for future editions of the Steam Book.
+2. Right of First Refusal (again): If any Securities remain available after the expiration of the Offerings, the Company agrees to offer the Agent the first right to act as lead managing underwriter for the Public Offering.
+3. Right of First Negotiation: Licensor shall give Licensee the first right of negotiation for each Additional Title.
+
+These clauses grant one party a priority opportunity to participate in a specific transaction or activity before others can consider it.
+    Relevance Score: 0.4
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context, accurately identifying and explaining the three clauses that grant one party a right of first refusal, right of first offer, or right of first negotiation. There is no information not present in the context that is hallucinated or added to support the answer.
+
+--------------------------------------------------------------------------------
+
+=== Comparison: Embedder_BgeSmall vs Embedder_MiniLM ===
+Found 100 matching questions.
+
+Comparative Case 1:
+  Question: Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?
+
+  [Embedder_BgeSmall Config]:
+    Answer: No, according to the text, there is no minimum purchase obligation; Minimum Order Quantities. The agreement states "No Minimum Purchase Obligation; Minimum Order Quantities." This means that either party is not obligated to purchase a specific quantity or amount of product from the counterparty.
+    Relevance Score: 1.0
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer accurately reflects the context, specifically stating "No Minimum Purchase Obligation; Minimum Order Quantities", which clearly indicates that there is no minimum purchase obligation.
+
+  [Embedder_MiniLM Config]:
+    Answer: Yes, according to Section 2.4(e)(i), the Customer is required to purchase at least the amount of Product set forth in the Firm Order for such Product in the applicable calendar month. This implies a minimum order size or quantity that must be purchased by the Customer from the Manufacturer within each calendar month.
+
+Additionally, Section 2.4(e)(ii) mentions "Minimum Order Quantities", which suggests that there may be specific quantities of Product that must be ordered by the Customer for each Purchase Order. However, it is not explicitly stated what these minimum order quantities are or how they apply to different types of Products.
+    Relevance Score: 1.0
+    Adherence Score: 0.8
+    Judge Adherence Feedback: Score: 4
+Reasoning: The answer is mostly supported by the context, but it could be improved by providing more specific details about the minimum order quantities. The provided information accurately reflects the requirement for purchasing at least the amount of Product set forth in the Firm Order, but it does not explicitly state what these minimum order quantities are or how they apply to different types of Products.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 2:
+  Question: Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?
+
+  [Embedder_BgeSmall Config]:
+    Answer: No, according to the contract, there is no minimum purchase obligation or minimum order quantity. The text states: "No Minimum Purchase Obligation; Minimum Order Quantities." Additionally, it explicitly mentions that Customer is not obligated to purchase any minimum or specific quantity of Product unless it is specifically set forth in a Facility Addendum.
+    Relevance Score: 1.0
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer accurately reflects the context, explicitly stating "No Minimum Purchase Obligation; Minimum Order Quantities" and further clarifying that Customer is not obligated to purchase any minimum or specific quantity of Product unless specified in a Facility Addendum.
+
+  [Embedder_MiniLM Config]:
+    Answer: Yes, according to Section 2.4(e)(i), the Customer is required to purchase at least the amount of Product set forth in the Firm Order for such Product in the applicable calendar month. This implies a minimum order size or quantity that must be purchased by the Customer from the Manufacturer within each calendar month.
+
+Additionally, Section 2.4(e)(ii) mentions "Minimum Order Quantities", which suggests that there may be specific quantities of Product that must be ordered by the Customer for each Purchase Order. However, it is not explicitly stated what these minimum order quantities are or how they apply to different types of Products.
+    Relevance Score: 1.0
+    Adherence Score: 0.8
+    Judge Adherence Feedback: Score: 4
+Reasoning: The answer is mostly supported by the context, but it could be improved by providing more specific details about the minimum order quantities. The provided information accurately reflects the requirement for purchasing at least the amount of Product set forth in the Firm Order, but it does not explicitly state what these minimum order quantities are or how they apply to different types of Products.
+
+--------------------------------------------------------------------------------
+
+Comparative Case 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+
+  [Embedder_BgeSmall Config]:
+    Answer: According to Section 1.50, the duration of the warranty period is the time period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component as extended pursuant to the Section entitled "Acceptance."
+    Relevance Score: 0.8
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context, specifically referencing Section 1.50 and the Product License Schedule, without introducing any information not present in the context.
+
+  [Embedder_MiniLM Config]:
+    Answer: Based on the provided context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period is specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, and it is extended for as long as the Software is covered by Maintenance Services and is used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+    Relevance Score: 1.0
+    Adherence Score: 1.0
+    Judge Adherence Feedback: Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+
+--------------------------------------------------------------------------------
+

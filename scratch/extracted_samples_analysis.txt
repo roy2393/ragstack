@@ -1,0 +1,829 @@
+================================================================================
+ RUN: Stage 1 - Embedder (bge-small)
+ FILE: autotune_s1_run1_recursive_bge-small_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Yes, according to the text, if one party's use of the product/services exceeds a certain threshold (i.e., "exceeding such allocation"), they will be billed at a rate set forth for those services. This implies that there is a fee increase or consent requirement when usage exceeds the allocated amount.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically the sentence "3 exceeding such allocation will be billed to the Customer at the rate set forth for such services." There is no hallucination of information not present in the context.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: Yes, there is a clause granting the Receiving Party (the "other Party") a right of first offer with respect to any proposed offer or arrangement that the Offering Party (or its affiliate) desires to accept, under which the Offering Party or one of its affiliates would acquire the subject matter. This is stated in section (a) of the text.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically clause (a), which explicitly grants the Receiving Party a right of first offer with respect to any proposed offer or arrangement that the Offering Party desires to accept.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: According to Section 1.50, the duration of the warranty period is the time period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component as extended pursuant to the Section entitled "Acceptance."
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically referencing Section 1.50 and the Product License Schedule, without introducing any information not present in the context.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, according to the text, the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a clause providing for joint or shared ownership of intellectual property between the parties.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the clause regarding joint ownership of intellectual property and providing no information not present in the text.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there is a restriction on the ability of a party to compete with the counterparty. According to Article IX, each party understands and acknowledges that the other party's Group may now market or have under development products that are competitive with products or services now offered by the Party.
+
+Specifically, the Party agrees not to:
+
+* Have any ownership interest in, or participate in the financing, operation, management or control of, any Competitor (Section 9(a));
+* Engage in or perform services for any Competitor if such services either:
+	+ Are competitive with products or services offered by the other party's Group; or
+	+ Would be a breach of confidentiality or non-disclosure obligations to third parties that are not members of either Group (Section 9(b)(1)).
+
+This restriction appears to apply indefinitely, as there is no mention of a specific time period or geographic limitation.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Article IX, which outlines the restrictions on competition and confidentiality. There is no hallucination of information not present in the context.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 1 - Embedder (bge-large)
+ FILE: autotune_s1_run2_recursive_bge-large_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Yes, according to Section 5.3, if Developer completes the Services and delivers the Deliverables prior to the Final Delivery Date, there is a bonus provision.
+
+Additionally, in Section 2.2(c), it mentions that Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Products, which implies that there may be a fee increase or consent requirement if one party's use of the product/services exceeds certain thresholds (i.e., Net Sales).
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Section 5.3, which mentions a bonus provision for completing services and delivering deliverables prior to the Final Delivery Date. Additionally, Section 2.2(c) provides context for the fee structure related to Treated Integra Products, without introducing any information not present in the context.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The text only mentions grants of licenses, permissions, use rights, and covenants not to sue, as well as personal representations, undertakings, warranties, and agreements. There is no mention of any right of first refusal or similar provision.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The text only mentions grants of licenses, permissions, use rights, and covenants not to sue, as well as personal representations, undertakings, warranties, and agreements, but does not mention any right of first refusal or similar provision.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: According to the context, the duration of the warranty against defects or errors is the initial Warranty Period (1.50) plus any extensions made by Supplier until the Software becomes Operative. The Warranty Period can be extended up to 60 days after Bank of America first becomes aware of an error or defect, as long as Supplier makes the necessary corrections to make the Software Operative.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the duration of the warranty period and its potential extensions, without introducing any information not present in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, according to Article 1 "Joint Inventions", the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by Article 1 "Joint Inventions" of the Intellectual Property Agreement, which explicitly states that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement. There is no need to hallucinate information not present in the context as the relevant clause provides a clear statement on joint ownership.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on competition and operating in certain geographies or sectors.
+
+Section 9.2 Exclusivity states that during the Term, neither Company nor its Affiliates (including any Third Party that becomes an Affiliate of Company after the Effective Date) shall engage in activities that compete with Emerald's business.
+
+Additionally, Section 9.3 Restrictions on Promotion restricts the promotion of activities with the same counterparty (Emerald) unless there is a change in circumstances, processes or intermediate parties, including changes to Global Trade Control Laws relevant to that Restricted Market.
+
+These restrictions suggest that the parties are limiting each other's ability to compete with each other or operate in certain geographies or sectors.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Sections 9.2 and 9.3, which explicitly state restrictions on competition and operating in certain geographies or sectors. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 1 - Embedder (minilm)
+ FILE: autotune_s1_run3_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that costs are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on how the product/service will be used or if there's a specific limit or cap on usage, it would be best to review the entire agreement or seek clarification from the relevant parties involved.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provisions for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any intellectual property, products, or services.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provisions for one party having priority over the other, which aligns with the conclusion drawn from the text.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the provided context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period is specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, and it is extended for as long as the Software is covered by Maintenance Services and is used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 "Joint Inventions" provides that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a shared or joint ownership of intellectual property between the parties to the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7 "Joint Inventions", which explicitly states that the parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will:
+
+* Independently develop, make, use, procure, or market products or services competitive with those offered by the other party's Group.
+* Require either party to refrain from developing, making, using, procuring, or marketing products or services competitive with those offered by it and/or members of its Group.
+
+This means that each party is prohibited from competing directly with the counterparty or any member of its respective Group.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the restrictions on competition between parties and their respective Groups.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 2 - Retriever (dense)
+ FILE: autotune_s2_run1_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that fees are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on this topic, it's possible that the relevant details may be found in other sections or exhibits of the agreement, or in separate documents or contracts.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, extended for as long as the Software is covered by Maintenance Services and used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 "Joint Inventions" provides that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a shared or joint ownership of intellectual property between the parties to the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7 "Joint Inventions", which explicitly states that the parties will jointly own all inventions and intellectual property rights resulting from work conducted under the agreement. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will:
+
+* Independently develop, make, use, procure, or market products or services competitive with those offered by the other party's Group.
+* Require either party to refrain from developing, making, using, procuring, or marketing products or services competitive with those offered by it and/or members of its Group.
+
+This means that each party is prohibited from competing directly with the counterparty or any member of its respective Group.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the restrictions on competition between parties and their respective Groups.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 2 - Retriever (sparse/BM25)
+ FILE: autotune_s2_run2_recursive_minilm_sparse_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: According to Section 17.5.3, if an employer increases the proportion of working time spent on Maintenance Services by any Employee without prior consent from DCL (which shall not be withheld unless granting consent would result in a conflict), there is no fee increase or consent requirement mentioned in this specific context.
+
+However, it appears that there might be a threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period. According to Section 17.5(b), if Customer's Minimum Order Quantity for a Product exceeds its ratable allocation of manufacturing capacity or Product Materials (as applicable) for the quarter, then the suspension period may not apply.
+
+In summary, there is no fee increase or consent requirement mentioned in this context, but there might be a threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period.
+  Context Relevance Score: 0.8
+  Adherence Score: 0.8
+  Judge Adherence Response:
+Score: 4
+Reasoning: The answer is fully supported by the context, accurately identifying the absence of fee increase or consent requirement mentioned in Section 17.5.3 and correctly pointing out the potential threshold-related issue with respect to the Exclusive Purchase Requirement Suspension Period. However, it could be slightly improved by providing more specific details about the suspension period's application.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: Yes, there are several clauses that grant one party a right of first refusal, right of first offer, or right of first negotiation:
+
+1. Right of First Refusal: SpinCo shall provide RemainCo with a right of first refusal to collaborate with SpinCo to provide content for future editions of the Steam Book.
+2. Right of First Refusal (again): If any Securities remain available after the expiration of the Offerings, the Company agrees to offer the Agent the first right to act as lead managing underwriter for the Public Offering.
+3. Right of First Negotiation: Licensor shall give Licensee the first right of negotiation for each Additional Title.
+
+These clauses grant one party a priority opportunity to participate in a specific transaction or activity before others can consider it.
+  Context Relevance Score: 0.4
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately identifying and explaining the three clauses that grant one party a right of first refusal, right of first offer, or right of first negotiation. There is no information not present in the context that is hallucinated or added to support the answer.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the provided text, there is no specific duration mentioned for a warranty against defects or errors in technology, products, or services. However, it can be inferred that:
+
+* For retail Products, an end-user limited warranty is provided with a duration of one year (as stated in Section 10.1).
+* For OEM products, a one-year limited warranty is also provided.
+* There is no mention of a specific warranty period for the Integra Technology or PcoMed Surface Modification Technology.
+
+It's possible that there may be additional warranties or guarantees mentioned elsewhere in the contract, but based on this text alone, it appears that the duration of any warranty against defects or errors is not explicitly stated.
+  Context Relevance Score: 0.8
+  Adherence Score: 0.8
+  Judge Adherence Response:
+Score: 4
+Reasoning: The answer accurately identifies the lack of specific duration mentioned for a warranty against defects or errors, and correctly infers that there may be additional warranties or guarantees mentioned elsewhere in the contract. However, it could be improved by explicitly stating that the provided text does not provide sufficient information to determine the duration of the warranty.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: No, there is no clause providing for joint or shared ownership of intellectual property between the parties to the contract. The language used in the contract suggests that Equifax will retain all ownership of the Intellectual Property Rights, including the Logo, and SpinCo or any member of the SpinCo Group will own the Licensed SpinCo Intellectual Property, Shared Library Materials, or other Intellectual Property licensed by any member of the RemainCo Group or the SpinCo Group.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the language used in the contract regarding intellectual property ownership and making no claims not present in the text.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on competition and operation.
+
+1. Non-Compete: The Settlement Agreement and Mutual Release does not contain a covenant-non-compete applicable to ***, but it is possible that *** may be subject to other non-compete agreements that would prevent them from competing with the same counterparty.
+2. Geographic or Business Sector Restrictions: There are no specific geographic or business sector restrictions mentioned in the provided context. However, HPIL ET's acquisition of intellectual properties and technologies in the energy sector suggests that there might be some restrictions on operating in certain sectors or geographies related to energy.
+
+In summary, while there is no explicit non-compete clause, there may be other agreements or circumstances that restrict ***'s ability to compete with the counterparty or operate in specific geographic areas or business sectors.
+  Context Relevance Score: 0.8
+  Adherence Score: 0.8
+  Judge Adherence Response:
+Score: 4
+Reasoning: The answer is mostly supported by the context, accurately identifying potential restrictions on competition and operation. However, it slightly hallucinates information not present in the context by suggesting geographic or business sector restrictions without explicit evidence from the provided text.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 2 - Retriever (hybrid)
+ FILE: autotune_s2_run3_recursive_minilm_hybrid_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Yes, according to the text, there is a consent requirement for an employer's perspective. The employer must obtain prior consent from DCL (which shall not be withheld unless the granting of consent would result in implementing the provisions of Section 2.4(b)) before increasing the proportion of working time spent on Maintenance Services by any Employees beyond a certain threshold.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Section 17.5.3, which states that prior consent of DCL is required before increasing the proportion of working time spent on Maintenance Services by any Employees. There is no information hallucination or addition not present in the original text.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: Yes, there is a clause granting SpinCo a right of first refusal to collaborate with RemainCo to provide content for future editions of the Steam Book. This right of first refusal ceases in the event of a Change of Control of either RemainCo or SpinCo.
+  Context Relevance Score: 0.4
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the specific clause regarding SpinCo's right of first refusal and its cessation in the event of a Change of Control.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the text, there are multiple warranties mentioned:
+
+1. For OEM Products, Tripath warrants that the Products will be free of manufacturing and workmanship defects for one year from the date of shipment by Distributor to a customer, or eighteen months from the date of shipment to Distributor, whichever is shorter.
+2. Integra may offset all costs and expenses covered under this warranty against the Fees as provided in Section 2.2 (c) as its sole and exclusive remedy for the recovery of such costs and expenses.
+3. For the acceptance period and for a period of one year from the Maintenance Commencement Date, Garman warrants that the Software is free of defects or errors.
+
+So, the duration of any warranty against defects or errors in technology, products, or services provided under the contract is:
+
+* 1 year (or 18 months) for OEM Products
+* 1 year from the Maintenance Commencement Date for Software
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately extracting and summarizing the warranty durations mentioned in the text without introducing any information not present in the context.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, according to the text, the Parties will "jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement" that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This suggests that there is a clause providing for joint or shared ownership of intellectual property between the parties.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically the sentence "Joint Inventions. The Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan..." which explicitly states the parties' agreement on joint ownership of intellectual property.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, according to the text, there is a restriction on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will independently develop, make, use, procure, or market products or services that may be competitive with those offered by the other party's Group. This means that each party agrees not to engage in activities that would directly compete with the other party's business or offerings.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically the paragraph that outlines the restrictions on competitive activities between the parties and their respective Groups. There is no information not present in the context that is being hallucinated or added to support the conclusion.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 3 - Chunker (recursive)
+ FILE: autotune_s3_run4_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that fees are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on this topic, it's possible that the relevant details may be found in other sections or exhibits of the agreement, or in separate documents or contracts.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, extended for as long as the Software is covered by Maintenance Services and used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 "Joint Inventions" provides that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a shared or joint ownership of intellectual property between the parties to the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7 "Joint Inventions", which explicitly states that the parties will jointly own all inventions and intellectual property rights resulting from work conducted under the agreement. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will:
+
+* Independently develop, make, use, procure, or market products or services competitive with those offered by the other party's Group.
+* Require either party to refrain from developing, making, using, procuring, or marketing products or services competitive with those offered by it and/or members of its Group.
+
+This means that each party is prohibited from competing directly with the counterparty or any member of its respective Group.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the restrictions on competition between parties and their respective Groups.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 3 - Chunker (semantic)
+ FILE: autotune_s3_run5_semantic_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: No, there is no mention of a fee increase or consent requirement based on one party's use of the product/services exceeding a certain threshold in this agreement. The only fees mentioned are "Fees" which apply to non-television, non-Internet exploitation of the Project (e.g., DVD, merchandise) and are mutually agreed upon by Licensee and Licensor.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, as it correctly states that there is no mention of a fee increase or consent requirement based on one party's use of the product/services exceeding a certain threshold in this agreement.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The agreement only addresses assignment, intellectual property rights, and representations and warranties, but does not include any provisions related to a right of first refusal or similar clauses.
+  Context Relevance Score: 0.4
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement only addresses assignment, intellectual property rights, and representations and warranties, but does not include any provisions related to a right of first refusal or similar clauses, making it accurate to conclude that no such clause exists.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the contract, the durations of warranties against defects or errors are:
+
+* For Software: 1.50 Warranty Period (commencing on the Acceptance Date and extended pursuant to Section entitled "Acceptance") + 1 year from the Maintenance Commencement Date.
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is sooner.
+* For retail Products: End-user limited warranty (terms set forth in documentation provided with the product).
+* For Year 2000 Compliance: eGain's sole and exclusive liability for breach of this warranty is to modify the Software or the eGain System so that it is Year 2000 Compliant, at no additional cost to Customer.
+* For Hosting Services: No explicit warranty duration is specified. However, Section 6.4 states that eGain does not warrant that the Hosting Services will meet Customer's requirements or be uninterrupted or free of errors or omissions.
+
+Note that these warranties may have different durations and remedies for different types of products or services provided under the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The durations of warranties against defects or errors are explicitly stated in the contract, and the answer accurately summarizes these durations for different types of products or services provided under the contract.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, there is a clause that provides for joint ownership of intellectual property between the parties to the contract. Specifically, Section 3.6 states:
+
+"The Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan and related specifically to the Product or the Compound Formulation..."
+
+This clause indicates that if an invention is created as a result of joint efforts by both parties, they will jointly own the intellectual property rights related to that invention.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context and does not hallucinate information not present in the context. Section 3.6 explicitly states that joint inventions will be jointly owned, which aligns with the provided text.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Based on the text, it appears that there is no restriction on the ability of a party to compete with the counterparty. The "Non-Exclusivity" clause (7.2) explicitly states that both parties may enter into other similar Servicing Agreements with any other person or persons without the other's consent, indicating that neither party has an exclusive right to provide services to the other. This suggests that each party is free to compete with the other for business and operate in any geography, business, or technology sector they choose.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The "Non-Exclusivity" clause (7.2) explicitly states that both parties may enter into other similar Servicing Agreements with any other person or persons without the other's consent, indicating that neither party has an exclusive right to provide services to the other.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 4 - Chunk Size (256)
+ FILE: autotune_s4_run6_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that fees are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on this topic, it's possible that the relevant details may be found in other sections or exhibits of the agreement, or in separate documents or contracts.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, extended for as long as the Software is covered by Maintenance Services and used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 "Joint Inventions" provides that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a shared or joint ownership of intellectual property between the parties to the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7 "Joint Inventions", which explicitly states that the parties will jointly own all inventions and intellectual property rights resulting from work conducted under the agreement. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will:
+
+* Independently develop, make, use, procure, or market products or services competitive with those offered by the other party's Group.
+* Require either party to refrain from developing, making, using, procuring, or marketing products or services competitive with those offered by it and/or members of its Group.
+
+This means that each party is prohibited from competing directly with the counterparty or any member of its respective Group.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the restrictions on competition between parties and their respective Groups.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 4 - Chunk Size (512)
+ FILE: autotune_s4_run7_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific fee increase or consent requirement mentioned in the agreement that would be triggered by one party's use of the product/services exceeding a certain threshold.
+
+However, Section 2.1(d) does mention that Customer must provide prior written consent for service providers to perform activities for the Product under this Agreement, and that such approval cannot be unreasonably withheld, conditioned or delayed. This suggests that there may be some limitations on how the product/service can be used, but it does not appear to be tied to a specific fee increase or threshold.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately summarizing the absence of specific fee increase or consent requirements mentioned in the agreement.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The agreement only mentions the assignment of this Agreement in its entirety to a purchaser of all or substantially all of a party's business or assets pertaining to the line of business to which this Agreement relates, without requiring approval from the other party.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context and does not hallucinate any information not present in the agreement. The text explicitly states that there is no clause granting one party a right of first refusal, offer, or negotiation, and only mentions assignment of the Agreement to a purchaser of all or substantially all of a party's business or assets.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the provided context, the durations of warranties against defects or errors are:
+
+* For OEM Products (Section 10.2): one year from the date of shipment by Distributor to a customer, or eighteen months from the date of shipment to Distributor, whichever is sooner.
+* For Software (Section 12): for a period of one year from the Maintenance Commencement Date, and thereafter for as long as the Software is covered by Maintenance Services and is used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranty periods specified in other sections or schedules not provided in the given context.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately extracting and summarizing the warranty durations for OEM Products and Software without introducing any information not present in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 3.6 provides for joint ownership of inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan and related specifically to the Product or the Compound Formulation. This means that any intellectual property created through collaborative efforts between the parties will be jointly owned by them.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the provisions of Clause 3.6 regarding joint ownership of inventions and Intellectual Property Rights.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Based on the provided context, it appears that there is no explicit restriction on a party's ability to compete with the counterparty or operate in a certain geography or business or technology sector.
+
+Section 7.2 states that the parties acknowledge that this Agreement does not create an exclusive business relationship between them, and each party may offer and provide services to third parties and solicit other clients. This suggests that there is no restriction on competition.
+
+Additionally, Section 9.6 explicitly states that "No Implied Rights" are created by this Agreement, which implies that the parties retain their freedom to operate in any way they see fit, without being restricted by the Agreement.
+
+However, it's worth noting that Section 7.1(e) does state that the parties are acting as independent contractors and not as agents or representatives of each other, which may imply a level of independence and autonomy for each party.
+  Context Relevance Score: 0.8
+  Adherence Score: 0.8
+  Judge Adherence Response:
+Score: 4
+Reasoning: The answer is mostly supported by the context, as Section 7.2 explicitly states that the agreement does not create an exclusive business relationship and each party may offer services to third parties. However, there might be some ambiguity due to the absence of explicit language restricting competition, which could lead to potential misinterpretation.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 4 - Chunk Size (1024)
+ FILE: autotune_s4_run8_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Yes, according to the text, if either party's use of the product/service (measured in MIPS) exceeds its respective Overhead/Projected MIPS for any year, then:
+
+* The party that exceeded its limit ("Triggering Party") will bear the full cost and expense of upgrading the relevant software licenses.
+* If the non-Triggering Party also exceeds its limit at a later time, it will pay the Triggering Party an amount equal to the total cost of purchasing the upgrade multiplied by a fraction representing the proportion of MIPS used by the non-Triggering Party.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the consequences of exceeding Overhead/Projected MIPS for each party. There is no information hallucinated or added that is not present in the original text.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The closest provision is Section 4.7 (Mutual Obligations), which describes certain rights related to software source code, object code, and documentation, as well as trademarks and service marks, but it does not involve a right of first refusal or offer.
+  Context Relevance Score: 0.4
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. There is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services in the provided agreement.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: According to Section 10.2, for OEM Products, Tripath warrants that the Products will be free of manufacturing and workmanship defects for one year from the date of shipment by Distributor to a customer, or eighteen months from the date of shipment to Distributor, whichever is sooner.
+
+For retail Products, the duration of the warranty is not specified in this contract. However, it is mentioned in Section 10.1 that Tripath provides an end user limited warranty for retail Products, and the terms of the end user limited warranty are set forth in documentation provided with the retail Product.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Section 10.2, which outlines the warranty duration for OEM Products, and Section 10.1, which mentions the end user limited warranty for retail Products without providing a specific duration. There is no information not present in the context that was hallucinated or added to support the answer.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, there are clauses that provide for joint or shared ownership of intellectual property between the parties to the contract.
+
+Section 9.1 Formation and Role states that Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan and related specifically to the Product or the Compound Formulation, including any patents, patent applications and other Intellectual Property Rights related to such inventions, if any, unless otherwise expressly set forth herein.
+
+Additionally, Section 9.2 Joint Ownership states that Any patent rights to any invention that (i) has been incorporated into an asset and (ii) was created or developed (in any form or manner) prior to the Distribution Date, shall be jointly owned by the respective parties.
+
+These clauses indicate that the parties have agreed to share ownership of certain intellectual property rights that are generated through their collaboration under this Agreement.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Sections 9.1 and 9.2, which explicitly state that certain intellectual property rights are jointly owned or made under this Agreement. There is no hallucination of information not present in the context.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there is a restriction on the ability of a party to compete with the counterparty. According to Section 9.5(a), each party understands and acknowledges that the other party's Group may now market or have under development products that are competitive with products or services now offered or that may be offered by it and/or members of its Group, and the parties' communications hereunder will not serve to impair the right of either party, or any member of its respective Group, to independently develop, make, use, procure, or market products or services now or in the future that may be competitive with those offered by the other party's Group.
+
+Additionally, Section 9.5(b) restricts Network Affiliate and its affiliates from engaging or participating in any business, holding equity interests, directly or indirectly, in another entity, whether currently existing or hereafter created, or participating in any other joint venture that competes or would compete with any business that NCM is authorized to conduct in the Territory pursuant to this Agreement.
+
+There are also restrictions on promotion and disparagement of products in Section 9.3, which prohibits comparing a product (other than the Product) with the Product in any aspect nor disparaging the Product in any manner during the Term.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Section 9.5(a) and (b), which explicitly state restrictions on competition and promotion of products or services that may be competitive with those offered by the other party's Group. There is no hallucination of information not present in the context.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 5 - Reranker (none)
+ FILE: autotune_s5_run9_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: Based on the provided context, it appears that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+
+The relevant sections (2.4(b), 3.1, and exhibits referenced therein) seem to focus on obtaining Required Consents, disclosing costs to customers, and ensuring that fees are not excessive or unreasonable under applicable laws and instruments. There is no mention of a specific threshold or trigger for fee increases or consent requirements.
+
+If you're looking for information on this topic, it's possible that the relevant details may be found in other sections or exhibits of the agreement, or in separate documents or contracts.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately stating that there is no specific mention of a fee increase or consent requirement tied to exceeding a certain threshold.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language used in the agreement suggests that each party retains its respective rights and obligations, with no provision for one party having priority over the other in terms of purchasing, licensing, marketing, or distributing any equity interest, technology, assets, products, or services.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context. The agreement explicitly states that each party retains its respective rights and obligations, with no provision for one party having priority over the other, which aligns with the conclusion drawn from the language used in the agreement.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the context, the durations of warranties against defects or errors are:
+
+* For OEM Products: 1 year from the date of shipment by Distributor to a customer, or 18 months from the date of shipment to Distributor, whichever is shorter.
+* For Software: The warranty period specified in each Product License Schedule commencing on the Acceptance Date of the applicable Software component, extended for as long as the Software is covered by Maintenance Services and used by Sparkling in accordance with this Agreement.
+
+Note that there may be additional warranties or guarantees mentioned elsewhere in the contract, but these are the specific durations mentioned in the provided context.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context without hallucinating information not present in the context, accurately extracting and summarizing the warranty durations mentioned in the provided text.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 "Joint Inventions" provides that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan. This indicates a shared or joint ownership of intellectual property between the parties to the contract.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7 "Joint Inventions", which explicitly states that the parties will jointly own all inventions and intellectual property rights resulting from work conducted under the agreement. There is no information not present in the context that is being hallucinated.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: Yes, there are restrictions on the ability of a party to compete with the counterparty. The agreement states that neither party nor any member of its respective Group will:
+
+* Independently develop, make, use, procure, or market products or services competitive with those offered by the other party's Group.
+* Require either party to refrain from developing, making, using, procuring, or marketing products or services competitive with those offered by it and/or members of its Group.
+
+This means that each party is prohibited from competing directly with the counterparty or any member of its respective Group.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately summarizing the restrictions on competition between parties and their respective Groups.
+--------------------------------------------------
+
+================================================================================
+ RUN: Stage 5 - Reranker (cross-encoder)
+ FILE: autotune_s5_run10_recursive_minilm_dense_eval_details.csv
+================================================================================
+
+Sample 1:
+  Question: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?
+  Generated Answer: According to Section 5.2, it appears that there is a service fee payable by one party (likely the Company) for promoting the Product in accordance with the terms of this Agreement.
+
+Additionally, Section 2.4(b) mentions implementing provisions related to Required Consents, which may imply some kind of consent or approval process. However, I couldn't find any specific mention of a fee increase or consent requirement tied to one party's use of the product/services exceeding certain thresholds.
+
+If you're looking for more information on this topic, you might want to review Section 3.1 and its referenced exhibits, as they may provide additional context or clarify any conditions related to usage thresholds.
+  Context Relevance Score: 0.8
+  Adherence Score: 0.8
+  Judge Adherence Response:
+Score: 4
+Reasoning: The answer is mostly supported by the context, accurately identifying the service fee mentioned in Section 5.2 and referencing the potential for additional information in Section 3.1. However, it does not fully address the question of Required Consents or fees related to obtaining them, which are only briefly mentioned in Section 2.4(b) without providing further details.
+--------------------------------------------------
+Sample 2:
+  Question: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?
+  Generated Answer: No, there is no explicit clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. The language in Article IX focuses on the reservation of rights and intellectual property, as well as assignment of this Agreement, but does not include any provisions related to a right of first refusal or similar clauses.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately stating that there is no explicit clause granting one party a right of first refusal or similar clauses in Article IX.
+--------------------------------------------------
+Sample 3:
+  Question: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?
+  Generated Answer: Based on the provided context, the durations of warranties against defects or errors are:
+
+* For OEM Products: one year from the date of shipment by Distributor to a customer, or eighteen months from the date of shipment to Distributor, whichever is shorter.
+* For Latent Defects: sixty (60) days after Customer first becomes aware of any such defect.
+
+Additionally, there is a mention of a "Repair Period" which is four (4) hours for reporting an Error to Supplier.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, accurately extracting and summarizing the durations of warranties against defects or errors mentioned in the provided text. There is no hallucination of information not present in the context.
+--------------------------------------------------
+Sample 4:
+  Question: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?
+  Generated Answer: Yes, Clause 7 states that "The Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement that are directly resulting from work conducted under this Agreement in accordance with the Development Plan and related title and interest (including all Intellectual Property Rights therein) that it has or may have in any such Invention that is jointly Derived and that is subject to ownership by the other party." This indicates that there is a provision for joint or shared ownership of intellectual property between the parties.
+  Context Relevance Score: 1.0
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer is fully supported by the context, specifically Clause 7, which explicitly states that the Parties will jointly own all inventions and other Intellectual Property Rights jointly made under this Agreement.
+--------------------------------------------------
+Sample 5:
+  Question: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? 
+  Generated Answer: No, there is no restriction on the ability of a party to compete with the counterparty. The agreement explicitly states that neither party will be restricted from independently developing, making, using, procuring, or marketing products or services that may be competitive with those offered by the other party's Group. This means that each party is free to operate in any geography, business, or technology sector without restriction.
+  Context Relevance Score: 0.8
+  Adherence Score: 1.0
+  Judge Adherence Response:
+Score: 5
+Reasoning: The answer accurately reflects the language of the agreement, which explicitly states that neither party will be restricted from competing with the other party's Group. There is no ambiguity or room for interpretation, and the answer does not introduce any information not present in the context.
+--------------------------------------------------
+
